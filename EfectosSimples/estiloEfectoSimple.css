@@ -1,0 +1,87 @@
+/* CSS3 Gradiente */
+
+@font-face{
+    font-family: 'gooddogregular';
+    src: url('fonts/GoodDog-webfont.eot');   /* para IE */
+    src: url('fonts/GoodDog-webfont.woff') format("woff"), url('fonts/GoodDog-webfont.ttf') format('truetype');
+}
+
+h1 {
+   font-family: gooddogregular;
+   text-shadow: 5px  5px 10px #333;    /*der abajo  */
+}
+
+h2 {
+   font-family: gooddogregular;
+   text-shadow: 0 0 2px #fff,0 0 5px #ddd, 0 0 10px #eee; /* para concatenar varios textshadows */
+}
+
+.div1 {
+     font-family: gooddogregular;
+      text-shadow: 5px  5px 10px #333; 
+     height: 350px;
+     width: 350px;
+     position: relative;
+     /*background: rgba(255,255,0,0.5);
+     color: hsl(0,0%,25%);*/
+     border: 4px solid hsl(0,0%,10%);
+     background: -webkit-gradient(linear, left top,left bottom, color-stop(0,rgba(233,229,212,0.45)),color-stop(1,rgba(191,178,147,0.95)));
+     background: .moz-linear-gradient(center top,rgba(233,229,212,0.85) 0%,rgba(191,178,147,0.95) 100%);
+}
+
+.div2 {
+     font-family: gooddogregular;
+      text-shadow: 5px  5px 10px #333; 
+	height: 350px;
+	width: 350px;
+	left: 200px;
+	top: -300px;
+	/*background: rgba(255,255,0,0.6);
+	color: hsla(0,0%,25%,0.1);*/
+	border: 4px solid hsl(0,0%,10%);
+	position: relative;
+	/*border-radius: 15px / 150px;*/
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 0px;
+	border-bottom-left-radius: 30px;
+	border-bottom-right-radius:5px;
+	
+	/*box-shadow: 5px 5px 15px #dce;*/
+	box-shadow: inset -5px -5px 15px #cdd,5px 5px 15px #dce;
+	
+	
+	
+
+	 background: -webkit-gradient(linear, left top,left bottom, color-stop(0,rgba(233,229,212,0.45)),color-stop(1,rgba(191,178,147,0.95)));
+     background: .moz-linear-gradient(center top,rgba(233,229,212,0.85) 0%,rgba(191,178,147,0.95) 100%);
+}
+
+body{
+ 
+  background:    -webkit-gradient(linear,left top,right bottom,color-stop(0.25,Rgb(60,107,146)),color-stop(0.65,rgb(225,217,187)));
+  background:  -moz-linear-gradient(center top,rgb(60,107,146) 25%,rgb(255,217,187) 65%);
+
+
+}
+
+h1 + div{   /* multicolumnas */
+
+    -moz-column-count:2;
+    -webkit-column-count:2;
+    column-count: 2;
+
+    -moz-column-gap:2em;
+    -webkit-column-gap:2em;
+
+    /*separador */
+    -moz-column-rule-style: solid;
+    -moz-column-rule-color: #999;
+    -moz-column-rule-width: 1px;
+
+    -webkit-column-rule-style: solid;
+    -webkit-column-rule-color: #999;
+    -webkit-column-rule-width: 1px;
+
+     text-align: align;
+
+}

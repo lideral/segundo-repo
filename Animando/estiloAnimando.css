@@ -1,0 +1,29 @@
+/* CSS3 */
+.imagen {
+	width	:	300px;
+	height	:	300px;
+	margin	:	100 100 100 100;
+	
+	-webkit-transition-property	: transform; /* aplicación la transicion a 
+	                                       la propiedad transform*/
+	-webkit-transition-duration	:	1s; /* Definición de tiempo*/
+}
+
+.imagen:hover {
+	-webkit-transform	:	rotate(30deg) scale(1.2);
+	transform			:	rotate(45deg) scale(1.2);
+}
+h1{
+	font-size: 50px;
+	font-family: sans-serif;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 5s;
+}
+
+h1:hover{
+	background: -webkit-linear-gradient(blue,black);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-size: 80px;
+	
+}
